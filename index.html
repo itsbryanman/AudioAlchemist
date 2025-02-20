@@ -1,0 +1,44 @@
+<!-- my first webapp so be gentle- itsbryanman -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audio Alchemist</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+
+</head>
+<body>
+  <div id="app-root"></div>
+
+  <!-- Services -->
+  <script src="js/services/fileService.js"></script>
+  <script src="js/services/openLibraryService.js"></script>
+  <script src="js/services/googleBooksService.js"></script>
+  <script src="js/services/metadataService.js"></script>
+  <script src="js/services/namingService.js"></script>
+
+  <!-- Utils -->
+  <script src="js/utils/formatUtils.js"></script>
+  <script src="js/utils/validationUtils.js"></script>
+  <script src="js/utils/duplicateUtils.js"></script>
+
+  <!-- Components -->
+  <script type="text/babel" src="js/components/App.js"></script>
+  <script type="text/babel" src="js/components/FileSelector.js"></script>
+  <script type="text/babel" src="js/components/FileList.js"></script>
+  <script type="text/babel" src="js/components/RenamingOptions.js"></script>
+  <script type="text/babel" src="js/components/MetadataManager.js"></script>
+  <script type="text/babel" src="js/components/PreviewPane.js"></script>
+  <script type="text/babel" src="js/components/DuplicateChecker.js"></script>
+  <script type="text/babel" src="js/components/ProgressTracker.js"></script>
+  
+  <!-- Main -->
+  <script type="text/babel" src="js/main.js"></script>
+</body>
+</html>
